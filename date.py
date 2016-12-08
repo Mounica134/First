@@ -13,5 +13,24 @@ for i in range(len(d)):
             if n[1]-n[0]>1:
                 print int(d[n[0]+1:n[1]]),
 print int(d[n[1]+1:len(d)])
-#dont store all the positions of the separating characters it is a waste of memory
-# only store the previous one and update it each time
+
+# why is there a list 'n' still..
+# do not store anything but ONE previous value make it a variable not list
+# try this method
+
+# def breakText(line, breakCharacter):
+#     i = 0
+#     lastBreak = -1
+#     while i < len(line):
+#         if line[i] == breakCharacter:
+#             print(line[lastBreak+1:i])
+#             lastBreak = i
+#         elif i == len(line) - 1:
+#             print(line[lastBreak+1:])
+#         i += 1
+
+# text = 'this is a test string.. just to see if this works'
+# breakText(text, ' ')
+
+# you should be able to use this method and get the same result
+# try breakText(date, '/')
